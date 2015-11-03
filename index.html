@@ -1,20 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Teste</title>
+	<meta charset="utf-8">
+
+	<title>Minha primeira página no HitHub Pages</title>
+
+	<meta name="author" content="Lesley Andrez">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
 </head>
+
 <body>
 
-  <h1>Minha primeira página estática no GitHub Pages</h1>
+	<div class="reveal">
 
-  <ul>
-    <li>Que</li>
-    <li>Legal</li>
-    <li>Funciona </li>
-    <li>Mesmo</li>
-    <li>!!!</li>
-  </ul>
+		<div class="slides">
+
+			<section>
+				<h1>
+					Minha Pirmeira página estática no GitHub Pages
+				</h1>
+			</section>
+			<section>
+				<h1>
+					Não tem nada aqui
+				</h1>
+			</section>
+			<section>
+				<h1>...</h1>
+			</section>
+			<section>
+				<h1>
+					Já falei que não tem nada aqui
+				</h1>
+			</section>
+			<section>
+				<h1>
+					Para de ficar olhando
+				</h1>
+			</section>
+			<section>
+				<h1>
+					...
+				</h1>
+			</section>
+			<section>
+				<h1>
+					Não tem nada melhor pra fazer não neh?!
+				</h1>
+			</section>
+		</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		transition: 'slide',
+
+		dependencies: [
+			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true },
+			{ src: 'plugin/notes/notes.js', async: true }
+		]
+	});
+
+	</script>
 
 </body>
 </html>
